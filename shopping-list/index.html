@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping list</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Shopping List</h1>
+    <input type="text" id="name" placeholder="name">
+    <input type="number" id="price" placeholder="price">
+    <input type="button" value="+" onclick="addItem()">
+    <hr>
+    <ul id="list">
+    </ul>
+
+    <hr>
+    <input type="button" value="Total" onclick="sum()">
+    Total: <span id="total"> </span>
+
+</body>
+
+</html>
