@@ -1,7 +1,10 @@
 function addItem() {
     let item = {}
-    item.name = document.getElementById('name').value
-    item.price = parseInt(document.getElementById('price').value)
+    const nameElement = document.getElementById('name')
+    item.name = nameElement.value
+    const priceElment = document.getElementById('price')
+    item.price = parseInt(priceElment.value)
+
 
     let listElemment = document.getElementById('list')
 
@@ -26,6 +29,10 @@ function addItem() {
 
     
     listElemment.appendChild(li)
+    
+    nameElement.value = ''
+    priceElment.value = ''
+    
 }
 
 function sum() {
