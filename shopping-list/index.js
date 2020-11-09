@@ -50,7 +50,7 @@ function sum() {
     for (let index = 0; index < selectors.length; index++) {
         const selector = selectors[index];
         if (selector.checked) {
-            total = total + parseInt(selector.value)
+            total = total + parseFloat(selector.value)
         }
     }
     let totalElement = document.getElementById('total')
