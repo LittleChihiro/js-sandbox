@@ -3,7 +3,7 @@ function addItem() {
     const nameElement = document.getElementById('name')
     item.name = nameElement.value
     const priceElement = document.getElementById('price')
-    item.price = parseInt(priceElement.value)
+    item.price = parseFloat(priceElement.value)
     const dateElement = document.getElementById('date')
     item.date = dateElement.value
 
