@@ -17,3 +17,10 @@
     font-size: large;
     padding-left: 20px;
 }
+
+.date {
+    color: darkolivegreen;
+    width: 100px;
+    padding-left: 50px;
+
+}

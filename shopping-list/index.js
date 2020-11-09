@@ -2,8 +2,10 @@ function addItem() {
     let item = {}
     const nameElement = document.getElementById('name')
     item.name = nameElement.value
-    const priceElment = document.getElementById('price')
-    item.price = parseInt(priceElment.value)
+    const priceElement = document.getElementById('price')
+    item.price = parseInt(priceElement.value)
+    const dateElement = document.getElementById('date')
+    item.date = dateElement.value
 
 
     let listElemment = document.getElementById('list')
@@ -14,6 +16,7 @@ function addItem() {
     check.setAttribute("type", "checkbox")
     check.setAttribute("name", "selector")
     check.setAttribute("value", item.price)
+    check.setAttribute("onclick", "sum()")
     
 
     let nameSpan = document.createElement("span")
@@ -22,16 +25,22 @@ function addItem() {
     let priceSpan = document.createElement("span")
     priceSpan.setAttribute("class", "price")
     priceSpan.innerHTML = item.price
+    let dateSpan = document.createElement("span")
+    dateSpan.setAttribute("class", "date")
+    dateSpan.innerHTML = item.date
     
     li.appendChild(check)
     li.appendChild(nameSpan)
     li.appendChild(priceSpan)
+    li.appendChild(dateSpan)
 
     
     listElemment.appendChild(li)
     
     nameElement.value = ''
-    priceElment.value = ''
+    priceElement.value = ''
+    dateElement.value = ''
+
     
 }
 
